@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-title>Novo Filme</mat-card-title>    
+    <mat-card-content>
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="Nome" name="film" [(ngModel)]="film.name">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Resumo" name="resume" [(ngModel)]="film.resume">
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions align="start">
+        <button mat-raised-button (click)="create()">Salvar</button>
+        <button mat-raised-button color="warn" style="margin-left: 10px;" (click)="cancel()">Cancelar</button>
+    </mat-card-actions>
+</mat-card>
+
+
